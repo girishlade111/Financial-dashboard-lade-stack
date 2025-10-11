@@ -203,7 +203,7 @@ def render_dashboard(df, filters):
     """Render main dashboard content"""
     
     # Title and description
-    if filters['multi_company_mode'] and filters['uploaded_files']:
+    if filters['multi_company_mode']:
         st.title("🏢 Multi-Company Financial Comparison Dashboard")
         st.markdown("Comparative analysis of multiple companies' financial performance")
     else:
